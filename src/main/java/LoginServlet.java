@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import top.smartliu.mapper.UserMapper;
 import top.smartliu.pojo.User;
 
-import javax.servlet.ServletException;
+//import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,12 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.List;
 
-@WebServlet("loginServlet")
+@WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         // 0. 获取请求参数
         String username = req.getParameter("username");
         String password = req.getParameter("password");
@@ -47,5 +46,9 @@ public class LoginServlet extends HttpServlet {
         } else {
             writer.write("fail");
         }
+    }
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        this.doGet(request, response);
     }
 }
