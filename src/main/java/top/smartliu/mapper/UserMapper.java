@@ -6,6 +6,7 @@ import top.smartliu.pojo.User;
 import java.util.List;
 
 public interface UserMapper {
+    User select(String username, String password);
     List<User> selectAll();
 
     @Select("select * from tb_user where id  = #{id}")
