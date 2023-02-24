@@ -5,6 +5,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import top.smartliu.mapper.UserMapper;
 import top.smartliu.pojo.User;
+import top.smartliu.utils.SqlSessionFactoryUtils;
 
 //import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,9 +25,7 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
 
         // 1. 加载MyBatis核心配置文件，获取SqlSessionFactory实例
-        String resource = "mybatis-config.xml";
-        InputStream inputStream = Resources.getResourceAsStream(resource);
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSessionFactory sqlSessionFactory = SqlSessionFactoryUtils.getSqlSessionFactory();
 
         //2. 获取SqlSession对象，用它来执行sql
         SqlSession sqlSession = sqlSessionFactory.openSession();
