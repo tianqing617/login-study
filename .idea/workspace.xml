@@ -9,8 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b7a24e1-4b35-4002-a357-7e4b05cb3f6d" name="Changes" comment="feat: 解决登陆报404">
+    <list default="true" id="8b7a24e1-4b35-4002-a357-7e4b05cb3f6d" name="Changes" comment="feat: 初始化注册servlet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/smartliu/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/smartliu/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/smartliu/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/smartliu/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/smartliu/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/smartliu/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/top/smartliu/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/top/smartliu/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677152090266</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 初始化注册servlet">
+      <created>1677209632057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677209632057</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 初始化注册servlet">
+      <created>1677209641694</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677209641694</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +234,18 @@
     <MESSAGE value="feat: 初始化mybatis" />
     <MESSAGE value="feat: 初始化Servlet" />
     <MESSAGE value="feat: 解决登陆报404" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 解决登陆报404" />
+    <MESSAGE value="feat: 初始化注册servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 初始化注册servlet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/top/smartliu/RegisterServlet.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
